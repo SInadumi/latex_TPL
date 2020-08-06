@@ -1,0 +1,37 @@
+\documentclass[a4paper,11pt]{jsarticle}
+\usepackage{amsmath,amssymb}
+\usepackage{bm}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+
+% 余白設定
+\setlength{\textwidth}{170truemm}      % テキスト幅: 210-(20+20)=170mm
+\setlength{\fullwidth}{\textwidth}     % ページ全体の幅
+\setlength{\oddsidemargin}{20truemm}   % 左余白
+\addtolength{\oddsidemargin}{-1truein} % 左位置デフォルトから-1inch
+\setlength{\topmargin}{20truemm}       % 上余白
+\setlength{\textheight}{257truemm}     % テキスト高さ: 297-(20+20)=252mm
+\addtolength{\topmargin}{-1.5truein}     % 上位置デフォルトから-1inch
+
+
+\pagestyle{fancy}
+    \lhead{提出日:\today\\提出期限:\today} %ヘッダ左
+    \chead{} %ヘッダ中央
+    \rhead{} %ヘッダ右．コンパイルした日付を表示
+    \lfoot{} %フッタ左
+    \cfoot{\thepage} %フッタ中央．ページ番号を表示
+    \rfoot{} %フッタ右
+
+
+\begin{document}
+
+\begin{center}
+{\huge レポートタイトル}\\ % タイトル
+{\Large 講義名}\\ % 講義名
+{\large 学籍番号:** 情報工学課程 氏名}\\ % 学籍番号
+\end{center}
+
+\section{セクション1}
+\section{セクション2}
+
+\end{document}
