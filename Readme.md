@@ -14,3 +14,5 @@ PDFの表示:Ctrl + Alt + V
     https://qiita.com/Gandats/items/d7718f12d71e688f3573  
 [3] 卒論をTeXフォーマットなしから書くためのtips  
     https://yosshi71jp.hatenadiary.org/entry/20101210/1292005429  
+[4] jlistingでソースコードを綺麗に表示する  
+    https://mallowlabs.hatenablog.com/entry/20061226/1167137637  

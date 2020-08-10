@@ -4,6 +4,39 @@
 \usepackage{graphicx}
 \usepackage{fancyhdr}
 \usepackage{problem}
+\usepackage{listings,jlisting}
+
+% 余白設定
+\setlength{\textwidth}{170truemm}      % テキスト幅: 210-(20+20)=170mm
+\setlength{\fullwidth}{\textwidth}     % ページ全体の幅
+\setlength{\oddsidemargin}{20truemm}   % 左余白
+\addtolength{\oddsidemargin}{-1truein} % 左位置デフォルトから-1inch
+\setlength{\topmargin}{20truemm}       % 上余白
+\setlength{\textheight}{257truemm}     % テキスト高さ: 297-(20+20)=252mm
+\addtolength{\topmargin}{-1.5truein}     % 上位置デフォルトから-1inch
+
+% ヘッダー設定，フッター設定
+\pagestyle{fancy}
+    \lhead{} %ヘッダ左
+    \chead{} %ヘッダ中央
+    \rhead{} %ヘッダ右．コンパイルした日付を表示
+    \lfoot{} %フッタ左
+    \cfoot{\thepage} %フッタ中央．ページ番号を表示
+    \rfoot{} %フッタ右
+
+% listの設定
+\renewcommand{\lstlistingname}{リスト}  
+\lstset{
+        frame=single,
+        basicstyle=\ttfamily\small,
+        commentstyle={\gtfamily\scriptsize},
+        numbers=left,
+        numbersep=5pt,
+        tabsize=2,
+        extendedchars=true,
+        xleftmargin=0pt,
+        xrightmargin=0pt,
+}
 
 % 余白設定
 \setlength{\textwidth}{170truemm}      % テキスト幅: 210-(20+20)=170mm
@@ -41,6 +74,12 @@
 \begin{answer}
     問題1の解答です．
 \end{answer}
+
+サンプルソースコードをリスト\ref{sc:sample}に示す．
+
+\begin{lstlisting}[language=python,caption=sample.py,label=sc:sample]
+    print('Hello World')
+\end{lstlisting}
 
 \section{セクション2}
 
